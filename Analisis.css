@@ -1,0 +1,142 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.intro-split {
+  max-width: 1200px;
+  margin: 0 auto 22px;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Foto menyebar dan ukurannya disesuaikan */
+.foto-sebar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.foto-tile {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2.5px solid var(--basil);
+  background-color: var(--cream);
+  box-shadow: 0 5px 12px rgba(20, 56, 28, 0.783);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.foto-tile:last-child {
+  grid-column: 1 / -1;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.foto-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Miring (tilted) + bingkai putih + shadow highlight saat dideketin kursor */
+.foto-tile:hover {
+  transform: rotate(-3.5deg) scale(1.04);
+  border: 3px solid var(--white);
+  box-shadow:
+    0 0 0 4px var(--lemons),
+    0 12px 26px rgba(201, 241, 56, 0.977),
+    0 6px 18px rgba(255, 170, 12, 0.993);
+}
+
+.foto-tile:nth-child(2):hover {
+  transform: rotate(3.5deg) scale(1.04);
+}
+
+.intro-teks {
+  background-color: var(--cream);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.intro-teks p {
+  font-size: 14px;
+  line-height: 1.72;
+  color: #1E3A24;
+  text-align: left;
+}
+
+.ms-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.ms-card {
+  background-color: var(--cream);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ms-pill {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 28px;
+  border-radius: 999px;
+  border: 2.5px solid var(--white);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.pill-masalah {
+  background: linear-gradient(90deg, var(--passata) 0%, var(--lemons) 55%, var(--fresh-leaf) 100%);
+  box-shadow: 0 5px 16px rgb(255, 138, 35);
+}
+
+.pill-solusi {
+  background: linear-gradient(90deg, var(--basil) 0%, var(--fresh-leaf) 55%, var(--lemons) 100%);
+  box-shadow: 0 5px 16px rgb(62, 255, 88);
+}
+
+.ms-card p {
+  font-size: 13.8px;
+  line-height: 1.75;
+  color: #1E3A24;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .intro-split {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-sebar {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .ms-grid {
+    grid-template-columns: 1fr;
+  }
+}

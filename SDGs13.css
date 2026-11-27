@@ -1,0 +1,200 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sdgs13-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sdgs13-card {
+  background-color: var(--cream);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sdgs13-pill {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 28px;
+  border-radius: 999px;
+  border: 2.5px solid var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.pill-penjelasan {
+  background: linear-gradient(90deg, var(--basil) 0%, var(--fresh-leaf) 55%, var(--lemons) 100%);
+  box-shadow: 0 5px 16px rgb(62, 255, 88);
+}
+
+.pill-kampanye {
+  background: linear-gradient(90deg, var(--passata) 0%, var(--lemons) 55%, var(--fresh-leaf) 100%);
+  box-shadow: 0 5px 16px rgb(255, 138, 35);
+}
+
+.tokoh-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.tokoh-box {
+  background-color: var(--minty);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    border-width 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.tokoh-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(38, 101, 51, 0.25);
+}
+
+.tokoh-box.is-focused {
+  transform: scale(1.03);
+  border: 3.5px solid var(--white);
+  background-color: #cde8d4;
+  box-shadow:
+    0 0 0 4px var(--lemons),
+    0 14px 28px rgba(38, 101, 51, 0.38),
+    0 6px 18px rgba(255, 170, 12, 0.45);
+  z-index: 2;
+}
+
+.tokoh-box.is-dimmed {
+  transform: scale(0.97);
+  opacity: 0.72;
+  border-color: rgba(38, 101, 51, 0.45);
+}
+
+.tokoh-box h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--basil);
+}
+
+.tokoh-box p {
+  font-size: 13.8px;
+  line-height: 1.75;
+  color: #1E3A24;
+  text-align: left;
+}
+
+.tokoh-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tokoh-photo {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2.5px solid var(--basil);
+  background-color: var(--cream);
+  box-shadow: 0 5px 12px rgba(20, 56, 28, 0.783);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.tokoh-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.tokoh-photo:hover {
+  transform: rotate(-4deg) scale(1.06);
+  border: 3px solid var(--white);
+  box-shadow:
+    0 0 0 4px var(--lemons),
+    0 12px 26px rgba(201, 241, 56, 0.977),
+    0 6px 18px rgba(255, 170, 12, 0.993);
+}
+
+.kampanye-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.poster-frame,
+.video-frame {
+  width: fit-content;
+  max-width: 100%;
+  border: 2.5px solid var(--basil);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;
+  background-color: var(--cream);
+}
+
+.poster-frame img {
+  display: block;
+  width: auto;
+  height: 460px;
+  max-width: 100%;
+}
+
+.video-frame iframe {
+  display: block;
+  width: auto;
+  height: 460px;
+  max-width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  background-color: #000;
+}
+
+@media (max-width: 900px) {
+  .tokoh-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .sdgs13-card {
+    padding: 18px 16px;
+  }
+
+  .sdgs13-pill {
+    font-size: 16px;
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .poster-frame img,
+  .video-frame iframe {
+    height: 360px;
+  }
+}

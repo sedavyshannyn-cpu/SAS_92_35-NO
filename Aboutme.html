@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Saya - My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="aboutme.css">
+  <link rel="icon" href="favicon.ico?v=1">
+  <link rel="shortcut icon" href="favicon.ico?v=1">
+</head>
+
+<body>
+  <img src="HEADER WEB.png" alt="header" class="banner-image">
+
+  <ul class="navbar">
+    <li data-pos="START"><a href="index.html"><img src="BERANDA.png" alt="BERANDA"></a></li>
+
+    <li class="dropdown" data-pos="1 km">
+      <a href="Analisis.html"><img src="ANALISIS.png" alt="ANALISIS"></a>
+      <ul class="Dropdown">
+        <li><a href="Analisis.html#MASALAH"><img src="MASALAH.png" alt="MASALAH"></a></li>
+        <li><a href="Analisis.html#SOLUSI"><img src="SOLUSI.png" alt="SOLUSI"></a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown" data-pos="2 km">
+      <a href="Kerjasama.html"><img src="KERJA SAMA.png" alt="KERJA SAMA"></a>
+      <ul class="Dropdown">
+        <li><a href="Kerjasama.html#BILATERAL"><img src="BILATERAL.png" alt="BILATERAL"></a></li>
+        <li><a href="Kerjasama.html#REGIONAL"><img src="REGIONAL.png" alt="REGIONAL"></a></li>
+        <li><a href="Kerjasama.html#MULTILATERAL"><img src="MULTILATERAL.png" alt="MULTILATERAL"></a></li>
+        <li><a href="Kerjasama.html#INTERNATIONAL"><img src="INTERNATIONAL.png" alt="INTERNATIONAL"></a></li>
+      </ul>
+    </li>
+
+    <li data-pos="3 km"><a href="Pancasila.html"><img src="PANCASILA.png" alt="PANCASILA"></a></li>
+
+    <li class="dropdown" data-pos="4 km">
+      <a href="SDGs13.html"><img src="SDGs 13 HEADER.png" alt="SDGs 13"></a>
+      <ul class="Dropdown">
+        <li><a href="SDGs13.html#PENJELASAN"><img src="PENJELASAN.png" alt="PENJELASAN"></a></li>
+        <li><a href="SDGs13.html#KAMPANYE"><img src="KAMPANYE.png" alt="KAMPANYE"></a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown" data-pos="5 km">
+      <a href="Aboutme.html"><img src="TENTANG SAYA.png" alt="ABOUT ME"></a>
+      <ul class="Dropdown">
+        <li><a href="#PERKENALAN"><img src="PERKENALAN.png" alt="PERKENALAN"></a></li>
+        <li><a href="#TUJUAN"><img src="TUJUAN.png" alt="TUJUAN"></a></li>
+      </ul>
+    </li>
+
+    <li data-pos="FINISH"><a href="Daftarpustaka.html"><img src="DAFTAR PUSTAKA.png" alt="DAFTAR PUSTAKA"></a></li>
+  </ul>
+
+  <!-- RUNNING TRACK FULL SAMPAI BAWAH -->
+  <div class="full-track-wrapper">
+    <div class="perimeter-runner" aria-hidden="true">
+      <img src="./snooppy runing.gif" alt="">
+    </div>
+
+    <div class="about-container">
+      <!-- BAGIAN 1: PERKENALAN (PAKAI BACKGROUND) -->
+      <section class="about-card card-with-bg" id="PERKENALAN">
+        <h2 class="about-pill pill-perkenalan">Perkenalan</h2>
+
+        <div class="perkenalan-layout">
+          <div class="avatar-hover-box" id="avatarBox">
+            <div class="avatar-circle" tabindex="0" aria-label="Foto profil Snoopy, klik untuk melihat glitter dan foto saya">
+              <img src="snoppy.jpg" alt="Foto Snoopy" class="img-snoopy">
+              <img src="shannyn.jpeg" alt="Foto Shannyn Sedavy Tandinegara" class="img-muka">
+            </div>
+          </div>
+
+          <div class="perkenalan-teks">
+            <p>
+              Hey-hey-heyy explorers!
+              Selamat datang di ruang digital kecil saya! Perkenalkan saya Shannyn Sedavy Tandinegara, akrab dipanggil Shannyn, saya dari kelas 92 nomor absen 35. Saya adalah seorang yang senang berolahraga dan belajar hal baru.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN 2: TUJUAN (POLOS KREM BIASA) -->
+      <section class="about-card" id="TUJUAN">
+        <h2 class="about-pill pill-tujuan">Tujuan</h2>
+
+        <div class="tujuan-teks">
+          <p>
+            Ini adalah website tugas IL Kecil Kolaborasi: TIK, PPKN, dan IPS. Website ini bertujuan untuk meningkatkan kesadaran pelajar/anak muda mengenai pentingnya menjaga kebugaran jasmani dan kesejahteraan hidup (SDGs 3) melalui kebiasaan aktif bergerak, serta mendorong kepedulian terhadap aksi iklim (SDGs 13) dalam aktivitas sehari-hari. Selain itu website ini disusun untuk menunjukkan bagaimana kerja sama antarnegara dan penerapan nilai Pancasila mendukung terwujudnya kehidupan yang sehat, adil, dan berkelanjutan bagi generasi sekarang maupun masa depan.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p class="footer-tagline">Stay healthy, stay happy, for you, for me, and for all!</p>
+    <p class="footer-author">Shannyn Sedavy Tandinegara</p>
+  </footer>
+
+  <!-- SCRIPT UNTUK GLITTER POPPING OUT SAAT FOTO DI-KLIK -->
+  <script>
+    const avatarBox = document.getElementById('avatarBox');
+    const glitterSymbols = ['✨', '⭐', '🌟', '💫', '💛', '💚'];
+
+    avatarBox.addEventListener('click', () => {
+      const rect = avatarBox.getBoundingClientRect();
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      for (let i = 0; i < 20; i++) {
+        const glitter = document.createElement('span');
+        glitter.classList.add('glitter-particle');
+        glitter.textContent = glitterSymbols[Math.floor(Math.random() * glitterSymbols.length)];
+
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 95 + Math.random() * 80;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+        const rot = (Math.random() - 0.5) * 360;
+
+        glitter.style.left = `${centerX}px`;
+        glitter.style.top = `${centerY}px`;
+        glitter.style.setProperty('--tx', `${tx}px`);
+        glitter.style.setProperty('--ty', `${ty}px`);
+        glitter.style.setProperty('--rot', `${rot}deg`);
+        glitter.style.fontSize = `${14 + Math.random() * 12}px`;
+
+        avatarBox.appendChild(glitter);
+
+        setTimeout(() => {
+          glitter.remove();
+        }, 800);
+      }
+    });
+  </script>
+</body>
+
+</html>

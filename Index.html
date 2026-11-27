@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.ico?v=1">
+  <link rel="shortcut icon" href="favicon.ico?v=1">
+</head>
+
+<body>
+  <!-- INTRO VIDEO SPLASH (FRAME TENGAH + BACKGROUND WEBSITE BLUR, TANPA TOMBOL) -->
+  <div class="intro-splash" id="introSplash">
+    <div class="intro-video-card">
+      <video id="introVideo" autoplay playsinline preload="auto">
+        <!-- Ganti nama file sesuai video pembukamu -->
+        <source src="VIDEO SNOPPY RUNNING.mp4" type="video/mp4">
+        Browser kamu belum mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+
+  <img src="HEADER WEB.png" alt="header" class="banner-image">
+
+  <ul class="navbar">
+    <li data-pos="START"><a href="index.html"><img src="BERANDA.png" alt="BERANDA"></a></li>
+
+    <li class="dropdown" data-pos="1 km">
+      <a href="Analisis.html"><img src="ANALISIS.png" alt="ANALISIS"></a>
+      <ul class="Dropdown">
+        <li><a href="Analisis.html#MASALAH"><img src="MASALAH.png" alt="MASALAH"></a></li>
+        <li><a href="Analisis.html#SOLUSI"><img src="SOLUSI.png" alt="SOLUSI"></a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown" data-pos="2 km">
+      <a href="Kerjasama.html"><img src="KERJA SAMA.png" alt="KERJA SAMA"></a>
+      <ul class="Dropdown">
+        <li><a href="Kerjasama.html#BILATERAL"><img src="BILATERAL.png" alt="BILATERAL"></a></li>
+        <li><a href="Kerjasama.html#REGIONAL"><img src="REGIONAL.png" alt="REGIONAL"></a></li>
+        <li><a href="Kerjasama.html#MULTILATERAL"><img src="MULTILATERAL.png" alt="MULTILATERAL"></a></li>
+        <li><a href="Kerjasama.html#INTERNATIONAL"><img src="INTERNATIONAL.png" alt="INTERNATIONAL"></a></li>
+      </ul>
+    </li>
+
+    <li data-pos="3 km"><a href="Pancasila.html"><img src="PANCASILA.png" alt="PANCASILA"></a></li>
+
+    <li class="dropdown" data-pos="4 km">
+      <a href="SDGs13.html"><img src="SDGs 13 HEADER.png" alt="SDGs 13"></a>
+      <ul class="Dropdown">
+        <li><a href="SDGs13.html#PENJELASAN"><img src="PENJELASAN.png" alt="PENJELASAN"></a></li>
+        <li><a href="SDGs13.html#KAMPANYE"><img src="KAMPANYE.png" alt="KAMPANYE"></a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown" data-pos="5 km">
+      <a href="Aboutme.html"><img src="TENTANG SAYA.png" alt="ABOUT ME"></a>
+      <ul class="Dropdown">
+        <li><a href="Aboutme.html#PERKENALAN"><img src="PERKENALAN.png" alt="PERKENALAN"></a></li>
+        <li><a href="Aboutme.html#TUJUAN"><img src="TUJUAN.png" alt="TUJUAN"></a></li>
+      </ul>
+    </li>
+
+    <li data-pos="FINISH"><a href="Daftarpustaka.html"><img src="DAFTAR PUSTAKA.png" alt="DAFTAR PUSTAKA"></a></li>
+  </ul>
+
+  <!-- RUNNING TRACK FULL SAMPAI BAWAH -->
+  <div class="full-track-wrapper">
+    <div class="perimeter-runner" aria-hidden="true">
+      <img src="./snooppy runing.gif" alt="">
+    </div>
+
+    <!-- PENGERTIAN SDGs + FOTO -->
+    <section class="pengertian-section" id="PENJELASAN">
+      <div class="pengertian-edge">
+        <div
+          class="edge-flip"
+          id="sdgsFlipPanel"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+          aria-label="Apa Itu SDGs?"
+        >
+          <div class="edge-flip-inner">
+            <div class="edge-flip-front">
+              <h2>Apa Itu SDGs?</h2>
+            </div>
+
+            <div class="edge-flip-back">
+              <h3>Pengertian SDGs</h3>
+              <p>
+                SDGs (<em>Sustainable Development Goals</em>) atau Tujuan Pembangunan Berkelanjutan adalah agenda global PBB yang diadopsi pada 2015 untuk mengakhiri kemiskinan, melindungi lingkungan, mengurangi ketimpangan, serta mewujudkan perdamaian dan kesejahteraan bagi semua orang pada 2030. SDGs terdiri dari 17 tujuan dan 169 target, serta menyeimbangkan aspek ekonomi, sosial, dan lingkungan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edge-photo-box">
+          <img src="foto sdgs.png" alt="SDGs" class="edge-photo-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 SDGs: GAMBAR GANTI AKSI SAAT HOVER + TEKS BIASA DI SAMPING -->
+    <section class="sdgs-cards-section" id="JENIS-SDGS">
+      <div class="sdgs-cards-grid">
+        <!-- SDGs 1 -->
+        <article class="sdgs-item" style="--sdg-glow: #E5243B;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 1.jpg" alt="SDGs 1" class="img-main">
+            <img src="tanpa kemiskinan.jpg" alt="Aksi Nyata SDGs 1" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Kemiskinan membuat orang sulit memenuhi kebutuhan dasar dan keluar dari kesulitan hidup. Dengan perlindungan sosial dan peluang ekonomi, masyarakat bisa hidup lebih layak.</p>
+            <p class="sdgs-goal">Tujuan: mengakhiri kemiskinan dalam segala bentuk di mana pun.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 2 -->
+        <article class="sdgs-item" style="--sdg-glow: #DDA63A;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 2.png" alt="SDGs 2" class="img-main">
+            <img src="tanpa kelaparan.jpg" alt="Aksi Nyata SDGs 2" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Kekurangan pangan dan gizi buruk menghambat tumbuh kembang serta produktivitas. Dengan pertanian yang baik, pangan tersedia dan gizi masyarakat meningkat.</p>
+            <p class="sdgs-goal">Tujuan: mengakhiri kelaparan, mencapai ketahanan pangan dan perbaikan gizi, serta mendorong pertanian berkelanjutan.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 3 -->
+        <article class="sdgs-item" style="--sdg-glow: #4C9F38;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 3.png" alt="SDGs 3" class="img-main">
+            <img src="kehidupan sehat dan sejahtera.jpg" alt="Aksi Nyata SDGs 3" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Masyarakat yang sakit sulit belajar dan bekerja dengan baik. Layanan kesehatan yang merata membuat hidup lebih sehat dan produktif.</p>
+            <p class="sdgs-goal">Tujuan: menjamin kehidupan yang sehat dan mendorong kesejahteraan bagi semua usia.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 4 -->
+        <article class="sdgs-item" style="--sdg-glow: #C5192D;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 4.png" alt="SDGs 4" class="img-main">
+            <img src="pendidikan berkualitas.jpg" alt="Aksi Nyata SDGs 4" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Tanpa pendidikan yang baik, peluang kerja dan kemajuan menjadi terbatas. Pendidikan yang merata membuka kesempatan bagi semua orang.</p>
+            <p class="sdgs-goal">Tujuan: menjamin pendidikan yang inklusif, setara, dan berkualitas, serta kesempatan belajar sepanjang hayat.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 5 -->
+        <article class="sdgs-item" style="--sdg-glow: #FF3A21;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 5.png" alt="SDGs 5" class="img-main">
+            <img src="kesetaraan gender.jpg" alt="Aksi Nyata SDGs 5" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Diskriminasi gender membatasi peran perempuan dalam pendidikan, pekerjaan, dan pengambilan keputusan. Dengan kesetaraan, semua orang bisa berkontribusi secara adil.</p>
+            <p class="sdgs-goal">Tujuan: mencapai kesetaraan gender dan memberdayakan seluruh perempuan dan anak perempuan.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 6 -->
+        <article class="sdgs-item" style="--sdg-glow: #26BDE2;">
+          <div class="sdgs-poster-wrap">
+            <img src="SGDs 6.png" alt="SDGs 6" class="img-main">
+            <img src="air bersih.jpg" alt="Aksi Nyata SDGs 6" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Air yang tercemar dan sanitasi buruk memicu penyakit. Akses air bersih menjaga kesehatan dan kualitas hidup masyarakat.</p>
+            <p class="sdgs-goal">Tujuan: menjamin ketersediaan serta pengelolaan air bersih dan sanitasi yang berkelanjutan untuk semua.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 7 -->
+        <article class="sdgs-item" style="--sdg-glow: #FCC30B;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 7.png" alt="SDGs 7" class="img-main">
+            <img src="energi bersih.jpg" alt="Aksi Nyata SDGs 7" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Tanpa listrik dan energi yang memadai, kegiatan belajar, usaha, dan layanan kesehatan terhambat. Energi bersih menjaga kebutuhan tetap terpenuhi tanpa merusak lingkungan.</p>
+            <p class="sdgs-goal">Tujuan: menjamin akses energi yang terjangkau, andal, berkelanjutan, dan modern bagi semua.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 8 -->
+        <article class="sdgs-item" style="--sdg-glow: #A21942;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 8.png" alt="SDGs 8" class="img-main">
+            <img src="perkerjaan ekonmi.jpg" alt="Aksi Nyata SDGs 8" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Pertumbuhan ekonomi tidak berarti jika lapangan kerja sedikit dan kondisi kerja buruk. Pekerjaan layak membuat ekonomi tumbuh sekaligus menyejahterakan pekerja.</p>
+            <p class="sdgs-goal">Tujuan: mendorong pertumbuhan ekonomi yang inklusif dan berkelanjutan, serta pekerjaan yang produktif dan layak bagi semua.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 9 -->
+        <article class="sdgs-item" style="--sdg-glow: #FD6925;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 9.png" alt="SDGs 9" class="img-main">
+            <img src="industri.jpg" alt="Aksi Nyata SDGs 9" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Industri yang tidak modern dan infrastruktur yang buruk membuat negara sulit maju. Dengan inovasi dan infrastruktur yang kuat, pembangunan berjalan lebih cepat dan efisien.</p>
+            <p class="sdgs-goal">Tujuan: membangun infrastruktur yang tangguh, mendorong industrialisasi yang inklusif dan berkelanjutan, serta mendukung inovasi.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 10 -->
+        <article class="sdgs-item" style="--sdg-glow: #DD1367;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 10.png" alt="SDGs 10" class="img-main">
+            <img src="kurangnay kesenjangan.jpg" alt="Aksi Nyata SDGs 10" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Ketimpangan yang besar membuat sebagian orang tertinggal dari kemajuan. Dengan kesempatan yang lebih merata, hasil pembangunan bisa dirasakan semua kalangan.</p>
+            <p class="sdgs-goal">Tujuan: mengurangi ketimpangan di dalam negara maupun antarnegara.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 11 -->
+        <article class="sdgs-item" style="--sdg-glow: #FD9D24;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 11.png" alt="SDGs 11" class="img-main">
+            <img src="kota berkelanjutan.jpg" alt="Aksi Nyata SDGs 11" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Kota yang padat, kumuh, dan rawan bencana mengancam keselamatan warganya. Perencanaan yang baik membuat kota lebih aman, nyaman, dan tertata.</p>
+            <p class="sdgs-goal">Tujuan: menjadikan kota dan permukiman inklusif, aman, tangguh, dan berkelanjutan.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 12 -->
+        <article class="sdgs-item" style="--sdg-glow: #BF8B2E;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 12.png" alt="SDGs 12" class="img-main">
+            <img src="konsumsi produk.jpg" alt="Aksi Nyata SDGs 12" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Pemakaian sumber daya yang berlebihan menimbulkan limbah dan merusak alam. Dengan pola yang lebih bijak, sumber daya tetap cukup untuk generasi mendatang.</p>
+            <p class="sdgs-goal">Tujuan: menjamin pola konsumsi dan produksi yang berkelanjutan.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 13 -->
+        <article class="sdgs-item" style="--sdg-glow: #3F7E44;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 13.png" alt="SDGs 13" class="img-main">
+            <img src="perubahan iklim.jpg" alt="Aksi Nyata SDGs 13" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Perubahan iklim memicu cuaca ekstrem, banjir, dan kekeringan yang merugikan banyak orang. Tindakan cepat dapat mengurangi dampaknya dan melindungi bumi.</p>
+            <p class="sdgs-goal">Tujuan: mengambil tindakan segera untuk memerangi perubahan iklim dan dampaknya.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 14 -->
+        <article class="sdgs-item" style="--sdg-glow: #0A97D9;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 14.png" alt="SDGs 14" class="img-main">
+            <img src="ekosistem laut.jpg" alt="Aksi Nyata SDGs 14" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Pencemaran dan penangkapan ikan berlebihan merusak kehidupan laut. Laut yang terjaga menjadi sumber pangan dan penghidupan jangka panjang.</p>
+            <p class="sdgs-goal">Tujuan: melestarikan dan memanfaatkan laut, samudra, dan sumber daya kelautan secara berkelanjutan.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 15 -->
+        <article class="sdgs-item" style="--sdg-glow: #56C02B;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 15.png" alt="SDGs 15" class="img-main">
+            <img src="ekosistem darat.jpg" alt="Aksi Nyata SDGs 15" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Penebangan hutan dan kerusakan lahan mengancam satwa dan keseimbangan alam. Dengan perlindungan yang baik, hutan dan keanekaragaman hayati tetap terjaga.</p>
+            <p class="sdgs-goal">Tujuan: melindungi, memulihkan, dan memanfaatkan ekosistem darat secara berkelanjutan, mengelola hutan lestari, mengatasi penggurunan, menghentikan degradasi lahan, dan menghentikan hilangnya keanekaragaman hayati.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 16 -->
+        <article class="sdgs-item" style="--sdg-glow: #00689D;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 16.png" alt="SDGs 16" class="img-main">
+            <img src="perdamaian.jpg" alt="Aksi Nyata SDGs 16" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Konflik, korupsi, dan hukum yang lemah membuat masyarakat tidak aman dan sulit percaya pada pemerintah. Lembaga yang adil dan transparan menciptakan rasa aman serta kepercayaan.</p>
+            <p class="sdgs-goal">Tujuan: mendorong masyarakat yang damai dan inklusif, akses keadilan bagi semua, serta lembaga yang efektif, akuntabel, dan inklusif.</p>
+          </div>
+        </article>
+
+        <!-- SDGs 17 -->
+        <article class="sdgs-item" style="--sdg-glow: #19486A;">
+          <div class="sdgs-poster-wrap">
+            <img src="SDGs 17.png" alt="SDGs 17" class="img-main">
+            <img src="kemitraan.jpg" alt="Aksi Nyata SDGs 17" class="img-action">
+          </div>
+          <div class="sdgs-info-box">
+            <p class="sdgs-desc">Masalah global tidak bisa diselesaikan sendirian oleh satu pihak. Dengan kerja sama pemerintah, swasta, dan masyarakat, semua tujuan lebih mudah tercapai.</p>
+            <p class="sdgs-goal">Tujuan: memperkuat sarana pelaksanaan dan menghidupkan kembali kemitraan global untuk pembangunan berkelanjutan.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p class="footer-tagline">Stay healthy, stay happy, for you, for me, and for all!</p>
+    <p class="footer-author">Shannyn Sedavy Tandinegara</p>
+  </footer>
+
+  <script>
+    const introSplash = document.getElementById('introSplash');
+    const introVideo = document.getElementById('introVideo');
+
+    function closeIntro() {
+      if (!introSplash) return;
+      introSplash.classList.add('is-hidden');
+      if (introVideo) introVideo.pause();
+    }
+
+    if (introVideo) {
+      introVideo.addEventListener('ended', closeIntro);
+      introVideo.addEventListener('error', closeIntro);
+
+      introVideo.play().catch(() => {
+        introVideo.muted = true;
+        introVideo.play().catch(() => {});
+        const enableAudioOnce = () => {
+          introVideo.muted = false;
+          introVideo.play().catch(() => {});
+          document.removeEventListener('click', enableAudioOnce);
+        };
+        document.addEventListener('click', enableAudioOnce);
+      });
+    }
+
+    const flipPanel = document.getElementById('sdgsFlipPanel');
+    if (flipPanel) {
+      const toggleFlip = () => {
+        const flipped = flipPanel.classList.toggle('is-flipped');
+        flipPanel.setAttribute('aria-expanded', String(flipped));
+      };
+      flipPanel.addEventListener('click', toggleFlip);
+      flipPanel.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleFlip();
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

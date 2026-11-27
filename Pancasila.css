@@ -1,0 +1,63 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.pancasila-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.pancasila-card {
+  background-color: var(--cream);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pancasila-pill {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 28px;
+  border-radius: 999px;
+  border: 2.5px solid var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.pill-sdgs {
+  background: linear-gradient(90deg, var(--passata) 0%, var(--lemons) 55%, var(--fresh-leaf) 100%);
+  box-shadow: 0 5px 16px rgb(255, 138, 35);
+}
+
+.pill-penerapan {
+  background: linear-gradient(90deg, var(--basil) 0%, var(--fresh-leaf) 55%, var(--lemons) 100%);
+  box-shadow: 0 5px 16px rgb(62, 255, 88);
+}
+
+.pancasila-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #1E3A24;
+  text-align: left;
+}
+
+@media (max-width: 820px) {
+  .pancasila-card {
+    padding: 20px 18px;
+  }
+
+  .pancasila-pill {
+    font-size: 16px;
+    padding: 7px 20px;
+  }
+}

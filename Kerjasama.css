@@ -1,0 +1,119 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ks-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ks-row {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.ks-row.foto-kanan {
+  grid-template-columns: 1fr 340px;
+}
+
+.ks-photo-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2.5px solid var(--basil);
+  background-color: var(--cream);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.ks-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ks-photo-wrap:hover {
+  transform: rotate(-3deg) scale(1.03);
+  border: 3px solid var(--white);
+  box-shadow:
+    0 0 0 4px var(--lemons),
+    0 12px 26px rgba(201, 241, 56, 0.977),
+    0 6px 18px rgba(255, 170, 12, 0.993);
+}
+
+.ks-row.foto-kanan .ks-photo-wrap:hover {
+  transform: rotate(3deg) scale(1.03);
+}
+
+.ks-card {
+  background-color: var(--cream);
+  border: 2.5px solid var(--basil);
+  border-radius: 14px;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ks-pill {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 26px;
+  border-radius: 999px;
+  border: 2.5px solid var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.pill-bilateral {
+  background: linear-gradient(90deg, var(--basil) 0%, var(--fresh-leaf) 55%, var(--lemons) 100%);
+  box-shadow: 0 5px 15px rgb(55, 193, 71);
+}
+
+.pill-regional {
+  background: linear-gradient(90deg, var(--fresh-leaf) 0%, var(--lemons) 55%, var(--passata) 100%);
+  box-shadow: 0 5px 15px rgb(225, 220, 83);
+}
+
+.pill-multilateral {
+  background: linear-gradient(90deg, var(--passata) 0%, var(--lemons) 55%, var(--fresh-leaf) 100%);
+  box-shadow: 0 5px 15px rgb(241, 105, 56);
+}
+
+.pill-internasional {
+  background: linear-gradient(90deg, var(--basil) 0%, var(--passata) 55%, var(--lemons) 100%);
+  box-shadow: 0 5px 15px rgb(21, 87, 33);
+}
+
+.ks-card p {
+  font-size: 13.8px;
+  line-height: 1.75;
+  color: #1E3A24;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .ks-row,
+  .ks-row.foto-kanan {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-row.foto-kanan .ks-photo-wrap {
+    order: -1;
+  }
+
+  .ks-photo-wrap {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

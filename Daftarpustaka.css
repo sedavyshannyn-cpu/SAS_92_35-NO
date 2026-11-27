@@ -1,0 +1,85 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.dapus-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* KOTAK UTAMA DENGAN BORDER PUTIH & BACKGROUND SAMA */
+.dapus-card {
+  background-color: var(--cream);
+  border: 3.5px solid var(--white); /* Border putih */
+  border-radius: 14px;
+  padding: 28px 34px;
+  box-shadow: 0 0 0 2.5px var(--basil); /* Garis luar hijau tipis biar tetap menyatu */
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* JUDUL PILL DAFTAR PUSTAKA */
+.dapus-pill {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 28px;
+  border-radius: 999px;
+  border: 2.5px solid var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.3px;
+  background: linear-gradient(90deg, var(--passata) 0%, var(--lemons) 55%, var(--fresh-leaf) 100%);
+  box-shadow: 0 5px 16px rgb(255, 138, 35);
+}
+
+/* LIST LINK BIASA TANPA WADAH/KOTAK */
+.dapus-links-plain {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dapus-links-plain p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* LINK BIASA YANG GANTI WARNA SAAT KURSOR DEKAT */
+.dapus-links-plain a {
+  color: #1E3A24; /* Warna teks normal */
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.dapus-links-plain a:hover,
+.dapus-links-plain a:focus-visible {
+  color: #ea580c; /* Ganti warna jadi oranye saat kursor mendekat */
+  text-decoration: underline;
+  outline: none;
+}
+
+@media (max-width: 820px) {
+  .dapus-card {
+    padding: 20px 18px;
+  }
+
+  .dapus-pill {
+    font-size: 16px;
+    padding: 7px 20px;
+  }
+
+  .dapus-links-plain p {
+    font-size: 13.5px;
+  }
+}
